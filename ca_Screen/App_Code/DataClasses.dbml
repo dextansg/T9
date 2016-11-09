@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MaisonExpertData" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=ACER\SA2008;Initial Catalog=MaisonExpertData;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MaisonExpertDataConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.PropertyData" Member="PropertyDatas">
+    <Type Name="PropertyData">
+      <Column Name="PropertyID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Heading" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Size" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Prize" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Bedroom" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bathroom" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PropertyImage" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
